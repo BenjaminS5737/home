@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Benjamin Schmidt</title>
+    <meta name="description"
+        content="Aerodynamic ASCII 2D Airfoil simulation & computational engineering portfolio by Benjamin Schmidt.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="apple-nav apple-nav-dark">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Benjamin Schmidt</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="apple-page-main">
+        <div class="section-container">
+            <div class="apple-page-header">
+
+                <h1 class="apple-page-title">Computational Physics</h1>
+
+                </p>
+            </div>
+
+            <div class="ascii-showcase-card">
+                <div class="ascii-viewport-wrapper" id="canvasContainer">
+                    <canvas id="asciiCanvas" class="ascii-canvas"></canvas>
+                </div>
+                <div class="sample-info-header">
+                    <p class="sample-info-desc">
+                        Airflow around NACA 2412 airfoil
+                    </p>
+                </div>
+            </div>
+            <section class="sample-info-section">
+                <div class="sample-info-header">
+
+                    <h4 class="sample-info-title">Physics-Informed Neural Networks for Aerodynamic Shape Optimization: A
+                        Machine Learning Approach to Accelerating Aircraft Design
+                    </h4> <a href="https://ieeexplore.ieee.org/document/11533008" target="_blank"
+                        class="sample-info-header-link">Paper</a>
+                    <p class="sample-info-desc">
+                        Abstract: Aerodynamic Shape optimization (ASO) is a computationally challenging but critical
+                        component of modern aircraft design, which involves modifying an airfoil to minimize the
+                        drag-to-lift ratio. Traditional methods for this problem utilize a simulation-based approach
+                        known as computational fluid dynamics (CFD) to solve the Reynolds-Averaged Navier-Stokes
+                        (RANS) equations and extract pressure values, which can be used to calculate lift and drag.
+                        These values are then iteratively updated to better suit turbulence conditions. The problem
+                        with this approach lies in the time complexity of iteratively computing solutions to the
+                        RANS equations required for ASO to converge. To exponentially speed up the process of ASO,
+                        we propose a novel algorithm that replaces a CFD solver with a physics-informed neural
+                        network (PINN), along with a comparison between two parameterization techniques to optimize
+                        an airfoil, both utilizing a PINN instead of a CFD solver. The model shows a speedup of
+                        11,310.24% with the risk of only a 13% decrease in accuracy compared to a CFD solver.
+                    </p>
+                    <div class="sample-info-affiliations">
+                        <div class="affiliation-item">
+                            <span class="affiliation-text">Under the mentorship of researcher at</span>
+                            <div class="affiliation-logo-wrapper">
+                                <img src="images/nasa_logo.png" alt="NASA Logo" class="affiliation-logo nasa-logo">
+                            </div>
+                        </div>
+                        <div class="affiliation-item">
+                            <span class="affiliation-text">Presented at</span>
+                            <div class="affiliation-logo-wrapper logo-mit-bg">
+                                <img src="images/mit_logo.png" alt="MIT Logo" class="affiliation-logo mit-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="section-divider">
+
+                <!-- EnviDrones Title Section -->
+
+
+                <div class="apple-page-header">
+                    <h1 class="apple-page-title">EnviDrones</h1>
+                    <p class="sample-info-desc">
+                        Founded research and development organization focused on developing high performance autonomous
+                        drones for environmental surveying. Created a statistical model that combines Convolutional
+                        Neural Networks with sensor data to detect tree patterns and deforestation. Built autonomous
+                        drones to test model across local parks for further testing. Presented concept and
+                        in-development product to faculty at UC Berkeley.
+                    </p>
+                </div>
+
+                <div class="sample-info-grid" style="margin-bottom: 2rem;">
+                    <div class="info-card" style="padding: 0; overflow: hidden;">
+                        <img src="images/dronephoto.png" alt="Drone"
+                            style="width: 100%; height: auto; display: block; border-radius: 12px;">
+                    </div>
+                    <div class="info-card" style="padding: 0; overflow: hidden;">
+                        <img src="images/ML_model.jpg" alt="ML"
+                            style="width: 100%; height: auto; display: block; border-radius: 12px;">
+                    </div>
+                </div>
+
+                <hr class="section-divider">
+
+                <!-- RoboDefect Title Section -->
+                <div class="apple-page-header">
+                    <h1 class="apple-page-title">RoboDefect</h1>
+                    <p class="sample-info-desc">
+                        Under the guidance of a Stanford professor, I constructed and ran a comparative analysis on
+                        machine learning models and methods for robotic arm failure detection. Through this research, I
+                        demonstrated the effectiveness of the Tuned Random Forest algorithm in comparison to various
+                        traditional techniques for predicting failure based on real-time data. Finally, I compiled the
+                        test results using the UC Irvine dataset and presented the overall analysis in a comprehensive
+                        research poster.
+                    </p>
+                </div>
+
+                <!-- RoboDefect Photo Box (Larger size container) -->
+                <div class="sample-info-grid" style="margin-bottom: 2rem; grid-template-columns: 1fr;">
+                    <div class="info-card" style="padding: 0; overflow: hidden; min-height: 450px;">
+                        <img src="images/poster.png" alt="RoboDefect Research Poster"
+                            style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;">
+                    </div>
+                </div>
+                <hr class="section-divider">
+
+
+
+                <div class="apple-page-header">
+                    <h1 class="apple-page-title">AttendFlow</h1>
+                    <p class="sample-info-desc">
+                        Built and configured Ultra-High Frequency RFID scanning system to read student IDs remotely and
+                        store attendance records. Developed full-stack web application for school attendance based on
+                        the 5-Star App and an API to communicate with the card reader.Created features for event
+                        management, schedule adjustment, and student information handling. Presented project to school
+                        district and discussed methods to implement at a wide scale.
+                    </p>
+                </div>
+
+                <div class="sample-info-grid" style="margin-bottom: 2rem;">
+                    <div class="info-card" style="padding: 0; overflow: hidden;">
+                        <img src="images/CircuitBoard.png" alt="Circuit Board"
+                            style="width: 100%; height: auto; display: block; border-radius: 12px;">
+                    </div>
+                    <div class="info-card" style="padding: 0; overflow: hidden;">
+                        <img src="images/AttendApp.png" alt="Attendance App"
+                            style="width: 100%; height: auto; display: block; border-radius: 12px;">
+                    </div>
+                </div>
+                <hr class="section-divider">
+                <div class="apple-page-header">
+                    <h1 class="apple-page-title">Longhorn Robotics</h1>
+                    <p class="sample-info-desc">
+                        Used CAD software to design and prototype robot chassis, drivetrain, and intake system for my
+                        school's First Tech Challenge robotics team. Simulated and constructed parts for the robot and
+                        ran hundreds of tests to ensure accuracy and structural integrity of the system. Assisted in
+                        writing software for and testing micro-controller based embedded system onboard.
+
+                    </p>
+                </div>
+
+                <div class="sample-info-grid" style="margin-bottom: 2rem;">
+                    <div class="info-card" style="padding: 0; overflow: hidden;">
+                        <img src="images/robot.png" alt="Robot"
+                            style="width: 100%; height: auto; display: block; border-radius: 12px;">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="apple-footer apple-footer-dark">
+        <div class="footer-container">
+            <div>Copyright &copy; 2026 Benjamin Schmidt. All rights reserved.</div>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        class DecorativeNaca2412Engine {
+            constructor(canvas) {
+                this.canvas = canvas;
+                this.ctx = canvas.getContext('2d');
+
+                // Fixed Parameters
+                this.alpha = 7.5; // Fixed 7.5 deg Angle of Attack
+                this.numStreamlines = 32; // 32 continuous streamline channels
+                this.particlesPerStreamline = 18; // 18 flowing points per streamline
+                this.particles = [];
+
+                this.cellW = 6;
+                this.cellH = 10;
+                this.cols = 0;
+                this.rows = 0;
+
+                this.init();
+            }
+
+            init() {
+                this.resize();
+                window.addEventListener('resize', () => this.resize());
+                this.initParticles();
+                this.animate();
+            }
+
+            resize() {
+                const container = this.canvas.parentElement;
+                const dpr = Math.min(window.devicePixelRatio || 1, 2);
+                const rect = container.getBoundingClientRect();
+
+                this.canvas.width = rect.width * dpr;
+                this.canvas.height = rect.height * dpr;
+
+                // High-density Monospace Grid metrics (6px x 10px) for wing body
+                this.cellW = Math.max(5, Math.floor(6 * dpr));
+                this.cellH = Math.max(9, Math.floor(10 * dpr));
+                this.cols = Math.floor(this.canvas.width / this.cellW);
+                this.rows = Math.floor(this.canvas.height / this.cellH);
+
+                this.initParticles();
+            }
+
+            initParticles() {
+                this.particles = [];
+                for (let s = 0; s < this.numStreamlines; s++) {
+                    const basePy = (s + 0.5) * (this.canvas.height / this.numStreamlines);
+                    for (let p = 0; p < this.particlesPerStreamline; p++) {
+                        const offsetPx = (p / this.particlesPerStreamline) * this.canvas.width;
+                        this.particles.push({
+                            streamlineIndex: s,
+                            basePy: basePy,
+                            px: (offsetPx + Math.random() * 8) % this.canvas.width,
+                            speed: (0.42 + Math.random() * 0.05) * (this.canvas.width / 1000),
+                            glyph: (p % 2 === 0) ? '•' : '›'
+                        });
+                    }
+                }
+            }
+
+            // High-Resolution NACA 2412 Airfoil Geometry (m=0.02, p=0.4, t=0.12)
+            sampleNaca2412(px, py) {
+                const cx = this.canvas.width * 0.35;
+                const cy = this.canvas.height * 0.50;
+                const chord = this.canvas.width * 0.58; // Takes up 58% of canvas space!
+
+                const relX = px - cx;
+                const relY = py - cy;
+
+                const rad = (this.alpha * Math.PI) / 180;
+                // Rotate coordinates by 7.5 deg Angle of Attack
+                const rotX = relX * Math.cos(rad) + relY * Math.sin(rad);
+                const rotY = -relX * Math.sin(rad) + relY * Math.cos(rad);
+
+                // Normalized chord coordinate (0 = LE, 1 = TE)
+                const xc = rotX / chord + 0.25;
+                if (xc < 0 || xc > 1.0) {
+                    return { isInside: false, isBorder: false, xc: -1 };
+                }
+
+                const m = 0.02;
+                const p = 0.4;
+                const t = 0.12;
+
+                // NACA Thickness Distribution
+                const yt = 5 * t * (
+                    0.2969 * Math.sqrt(xc) -
+                    0.1260 * xc -
+                    0.3516 * Math.pow(xc, 2) +
+                    0.2843 * Math.pow(xc, 3) -
+                    0.1015 * Math.pow(xc, 4)
+                ) * chord;
+
+                // NACA 2412 Camber Line
+                let yc = 0;
+                if (xc < p) {
+                    yc = (m / (p * p)) * (2 * p * xc - xc * xc) * chord;
+                } else {
+                    yc = (m / Math.pow(1 - p, 2)) * ((1 - 2 * p) + 2 * p * xc - xc * xc) * chord;
+                }
+
+                const upperY = -yc - yt;
+                const lowerY = -yc + yt;
+
+                const isInside = rotY >= upperY && rotY <= lowerY;
+                const distUpper = Math.abs(rotY - upperY);
+                const distLower = Math.abs(rotY - lowerY);
+                const minDist = Math.min(distUpper, distLower);
+                const isBorder = minDist < (this.cellH * 0.80);
+
+                return { isInside, isBorder, xc, rotY, upperY, lowerY, distUpper, distLower };
+            }
+
+            // Infinitely Smooth C-Infinity Aerodynamic Streamline Physics
+            getSmoothStreamlinePos(px, basePy) {
+                const cx = this.canvas.width * 0.35;
+                const cy = this.canvas.height * 0.50;
+                const chord = this.canvas.width * 0.58;
+
+                const relX = (px - cx) / chord;
+                const relY = (basePy - cy) / chord;
+
+                let defY = 0;
+                let speedBoost = 1.0;
+
+                // Upper Suction Surface Deflection (Smooth Gaussian Curve)
+                if (relY < 0 && relX > -0.5 && relX < 0.9) {
+                    const crestDistX = relX - 0.05;
+                    const crestDistY = relY * 1.5 + 0.1;
+                    const crestBoost = Math.exp(-(crestDistX * crestDistX * 5.0 + crestDistY * crestDistY * 3.5));
+                    defY -= crestBoost * (this.canvas.height * 0.14);
+                    speedBoost += crestBoost * 0.65;
+                }
+                // Lower Pressure Surface Deflection (Smooth Compression)
+                else if (relY >= 0 && relX > -0.4 && relX < 0.8) {
+                    const lowerDistX = relX - 0.1;
+                    const lowerDistY = relY * 1.5 - 0.1;
+                    const compression = Math.exp(-(lowerDistX * lowerDistX * 4.5 + lowerDistY * lowerDistY * 3.0));
+                    defY += compression * (this.canvas.height * 0.04);
+                    speedBoost *= (1 - compression * 0.15);
+                }
+
+                // Downwash Deflection past Trailing Edge (Smooth Rational Sigmoid)
+                if (relX > 0.20) {
+                    const wakeX = relX - 0.20;
+                    const downwash = (wakeX / (wakeX + 0.55)) * (this.canvas.height * 0.12);
+                    defY += downwash;
+                }
+
+                return { py: basePy + defY, speedBoost };
+            }
+
+            updateParticles() {
+                if (this.isPaused) return;
+
+                for (const p of this.particles) {
+                    const flow = this.getSmoothStreamlinePos(p.px, p.basePy);
+
+                    // Continuous floating-point horizontal advancement
+                    p.px += p.speed * flow.speedBoost * 2.2;
+
+                    // Continuous wrap-around to restart along the exact same streamline
+                    if (p.px >= this.canvas.width) {
+                        p.px = 0;
+                    }
+                }
+            }
+
+            render() {
+                // Dark obsidian canvas background
+                this.ctx.fillStyle = '#040406';
+                this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+
+                const fontSize = Math.floor(this.cellH * 0.95);
+                this.ctx.font = `600 ${fontSize}px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`;
+                this.ctx.textBaseline = 'top';
+
+                // 1. RENDER SOLID HIGH-RESOLUTION NACA 2412 AIRFOIL WING BODY
+                for (let r = 0; r < this.rows; r++) {
+                    for (let c = 0; c < this.cols; c++) {
+                        const px = (c + 0.5) * this.cellW;
+                        const py = (r + 0.5) * this.cellH;
+                        const sample = this.sampleNaca2412(px, py);
+
+                        if (sample.isInside) {
+                            let ch = '';
+                            let color = '';
+
+                            if (sample.isBorder) {
+                                if (sample.xc < 0.03) ch = '(';
+                                else if (sample.xc > 0.94) ch = '\\';
+                                else if (sample.distUpper < sample.distLower) ch = '¯';
+                                else ch = '_';
+                                color = '#ffffff';
+                            } else {
+                                ch = sample.xc < 0.06 ? '▓' : '█';
+                                color = '#e5e5ea';
+                            }
+
+                            if (ch) {
+                                this.ctx.fillStyle = color;
+                                this.ctx.fillText(ch, c * this.cellW, r * this.cellH);
+                            }
+                        }
+                    }
+                }
+
+                // 2. RENDER STREAMLINE FLOW PARTICLES (SUB-PIXEL CONTINUOUS FLOATING-POINT MOTION)
+                for (const p of this.particles) {
+                    const flow = this.getSmoothStreamlinePos(p.px, p.basePy);
+                    const py = flow.py;
+
+                    // Don't draw flow particles if they pass directly through the solid wing body
+                    const sample = this.sampleNaca2412(p.px, py);
+                    if (sample.isInside) continue;
+
+                    // Main flowing point
+                    const color = flow.speedBoost > 1.25 ? '#00f0ff' : '#2997ff';
+                    this.ctx.fillStyle = color;
+                    this.ctx.fillText(p.glyph, p.px, py);
+
+                    // Subtle trailing point dot
+                    const trailPx = p.px - this.cellW * 1.2;
+                    if (trailPx > 0) {
+                        const trailFlow = this.getSmoothStreamlinePos(trailPx, p.basePy);
+                        const trailColor = flow.speedBoost > 1.25
+                            ? 'rgba(0, 240, 255, 0.45)'
+                            : 'rgba(41, 151, 255, 0.35)';
+                        this.ctx.fillStyle = trailColor;
+                        this.ctx.fillText('·', trailPx, trailFlow.py);
+                    }
+                }
+            }
+
+            animate() {
+                this.updateParticles();
+                this.render();
+                requestAnimationFrame(() => this.animate());
+            }
+        }
+
+        // Initialize Decorative Engine on DOM Ready
+        document.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById('asciiCanvas');
+            if (canvas) {
+                new DecorativeNaca2412Engine(canvas);
+            }
+        });
+    </script>
+</body>
+
+</html>

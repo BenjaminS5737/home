@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Schmidt — Mechanical Engineering &amp; EECS</title>
+    <meta name="description"
+        content="Personal portfolio of Benjamin Schmidt, studying Mechanical Engineering & EECS at UC Berkeley.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Apple Translucent Navigation Bar -->
+    <header class="apple-nav apple-nav-dark">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Benjamin Schmidt</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Apple Hero Section -->
+        <section class="apple-hero">
+            <div class="hero-wrapper">
+                <div class="eyebrow-badge">MECHANICAL ENGINEERING &amp; EECS @ UC BERKELEY</div>
+                <h1 class="hero-headline"><span id="typewriter"></span><span class="typing-cursor">|</span></h1>
+                <p class="hero-subhead">
+                    Engineering high performance autonomous systems, developing new approaches to computational physics,
+                    and innovating sustainable technology.
+                </p>
+
+                <!-- Framed Glass Split Screen Hero Visual -->
+                <div class="hero-showcase hero-showcase-split">
+                    <!-- Left Split Pane: Autonomous Drone -->
+                    <div class="split-pane">
+                        <img src="images/drone.png" alt="High performance autonomous drone in flight">
+                        <div class="split-pane-overlay">
+                            <div class="overlay-title">Hardware &amp; Robotics</div>
+                        </div>
+                    </div>
+
+                    <!-- Center Glass Divider -->
+                    <div class="split-divider"></div>
+
+                    <!-- Right Split Pane: CFD Airfoil -->
+                    <div class="split-pane">
+                        <img src="images/cfd_airfoil.png" alt="Computational fluid dynamics airfoil flow simulation">
+                        <div class="split-pane-overlay">
+                            <div class="overlay-title">CFD &amp; Aerodynamics</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Apple Minimal Dark Footer -->
+    <footer class="apple-footer apple-footer-dark">
+        <div class="footer-container">
+            <div>Copyright &copy; 2026 Benjamin Schmidt. All rights reserved.</div>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Typewriter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const text = "Hi, I'm Ben.";
+            const target = document.getElementById('typewriter');
+            let i = 0;
+            function type() {
+                if (i < text.length) {
+                    target.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, 100 + Math.random() * 30);
+                }
+            }
+            setTimeout(type, 350);
+        });
+    </script>
+</body>
+
+</html>
